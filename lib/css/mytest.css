@@ -20,11 +20,19 @@ body{
  background-image: linear-gradient(to right, #1a0136, #100145);
 
 }
-/*.navbar{
-	z-index:1;
-	height: 80px;
-    max-height: 170px;
-}*/
+
+.qstn{
+	color:#cfbab6 ;
+}
+.hd1{
+	color:#5a86c4 ;
+}
+.para{
+	text-align: justify;
+	margin: 10px;
+	padding: 30px;
+}
+
 
 .jumbotron{
 	/*background-image: linear-gradient(#01665f,#7cf7d6)!important;*/
