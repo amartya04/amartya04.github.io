@@ -1,0 +1,248 @@
+header{
+	margin-top: 34px;
+}
+a{
+	text-decoration: none;
+}
+body{
+	 color:#fff;
+	 background-image: linear-gradient(to right,#027d79,#364747);/*#55c2aa*/
+}
+
+.jumbotron{
+	background-image: linear-gradient(#01665f,#7cf7d6)!important;
+	color:#000873;
+	/*font-family: helvetica, monotype-corsiva;*/
+}
+.mapmbd{
+	border: 10px outset #55c2aa;
+
+	border-radius: 21px;
+	 width:400;
+	 height:300;
+	 
+	}
+.imgmbd{
+	border: 10px outset #55c2aa;
+	border-radius: 21px;
+	 width:300;
+	 height:200;
+	 margin-right: 20px;
+	 mar
+	}
+#faq{
+	cursor: pointer;
+}
+#showfaq{
+	display: none;
+
+	
+
+}
+.add-mgn{
+	border-style: ridge;
+	border-width: 0px;
+	border-color: #979c98;
+	margin: 25px;
+	padding: 10px;
+
+
+}
+.fa{
+	font-size: 36px;
+	margin: 20px;
+	padding: 4px;
+	color: #55c2aa;
+}
+.fa:hover{
+	font-size: 38px;
+	margin: 20px;
+	padding: 2px;
+	color: #fff;
+	cursor: pointer;
+}
+.arrowdwn{
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	color: #55c2aa;
+
+}
+.arrowdwn:hover{
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	color: #ffffff;
+
+
+}
+
+.fas{
+	font-size: 20px;
+	margin-right: 10px;
+	color: #55c2aa;
+}
+.fas:hover{
+	font-size: 24px;
+	margin-right: 12px;
+	color: #55c2aa;
+	cursor: pointer;
+
+}
+#header-img{
+background: black;
+max-width: 5%;
+margin-right: 10px;
+margin-left: 0px;
+transform: rotate(360deg);
+/*	transform: translateX(20px);
+	transition-duration: 2s;
+	transform: scale(1.1,1.1);*/
+	transition-duration: 1s;
+	transition-delay: 1s;
+}
+#header-img:hover {
+transform: rotate(360deg);
+transition-duration: 1s;
+transition-delay: 2s;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: 0;
+}
+/*--------subscribe form----*/
+ .c-checkbox {
+	 display: none;
+}
+ .c-checkbox:checked + .c-formContainer .c-form {
+	 width: 32em;
+
+}
+ .c-checkbox:checked + .c-formContainer .c-form__toggle {
+	 visibility: hidden;
+	 opacity: 0;
+	 transform: scale(0.7);
+}
+ .c-checkbox:checked + .c-formContainer .c-form__input, .c-checkbox:checked + .c-formContainer .c-form__buttonLabel {
+	 transition: 0.2s 0.1s;
+	 visibility: visible;
+	 opacity: 1;
+	 transform: scale(1);
+}
+ .c-checkbox:not(:checked) + .c-formContainer .c-form__input:required:valid ~ .c-form__toggle::before, .c-checkbox:checked + .c-formContainer .c-form__input:required:valid ~ .c-form__toggle::before {
+	 content: 'subscribed! \1F60A';
+}
+ .c-checkbox:not(:checked) + .c-formContainer .c-form__input:required:valid ~ .c-form__toggle {
+	 pointer-events: none;
+	 cursor: default;
+}
+ .c-formContainer, .c-form, .c-form__toggle {
+	 width: 12em;
+	 height: 2em;
+}
+ .c-formContainer {
+	 position: relative;
+	 font-weight: 400;
+}
+ .c-form, .c-form__toggle {
+	 position: absolute;
+	 border-radius: 6.25em;
+	 background-color: #fff;
+	 transition: 0.2s;
+}
+ .c-form {
+	 left: 13%;
+	 transform: translateX(-01%);
+	 padding: 0.125em;
+	 box-sizing: border-box;
+	/* box-shadow: 0 0.125em 0.1125em rgba(0, 0, 0, 0.3);*/
+	 display: flex;
+	 justify-content: center;
+}
+ .c-form__toggle {
+	 color: #55c2aa;
+	 font-weight: 700;
+	 font-size: 20px;
+	 top: 0;
+	 cursor: pointer;
+	 z-index: 1;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .c-form__toggle::before {
+	 font-size: 20px;
+	 content: attr(data-title);
+}
+ .c-form__input, .c-form__button {
+	 font: inherit;
+	 color:#55c2aa;
+	 border: 0;
+	 outline: 0;
+	 border-radius: 5em;
+	 box-sizing: border-box;
+}
+ .c-form__input, .c-form__buttonLabel {
+	 font-size: 1.15em;
+	 opacity: 0;
+	 visibility: hidden;
+	 transform: scale(0.7);
+	 transition: 0s;
+}
+ .c-form__input {
+	 color: red;
+	 height: 100%;
+	 width: 100%;
+	 padding-left: 12px;
+}
+ .c-form__input::placeholder {
+	 color:#55c2aa;
+}
+ .c-form__input:required:valid {
+	 color: #55c2aa;
+}
+ .c-form__input:required:valid + .c-form__buttonLabel {
+	 color: #5ea671;
+}
+ .c-form__input:required:valid + .c-form__buttonLabel::before {
+	 pointer-events: initial;
+}
+ .c-form__buttonLabel {
+	 color: white;
+	 height: 100%;
+	 width: auto;
+}
+ .c-form__buttonLabel::before {
+	 content: '';
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 pointer-events: none;
+	 cursor: pointer;
+}
+ .c-form__button {
+	 color: inherit;
+	 padding: 0;
+	 height: 100%;
+	 width: 6em;
+	 background-color: black;
+}
+
+/* -----------MQ-------------*/
+/*
+@media (max-width:786px) {
+header{
+	margin-top: 85px;
+}
+.hide-nb{
+display: none;
+
+
+}
+*/
+
+}/*close mq*/

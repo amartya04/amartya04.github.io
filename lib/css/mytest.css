@@ -1,0 +1,290 @@
+header{
+	margin-top: 34px;
+}
+a{
+	text-decoration: none;
+}
+body{
+	 color:#dddded;/*#4c3399;*/
+
+	 background-color:#fff;/*#55c2aa*/
+	 font-family: "Lucida Console", Monaco, monospace;
+}
+.back{
+	z-index: -1;
+	padding-top: 15px;
+
+}
+.navbar{
+	background-color: #1c0129;/*#260138;*/
+ background-image: linear-gradient(to right, #1a0136, #100145);
+
+}
+/*.navbar{
+	z-index:1;
+	height: 80px;
+    max-height: 170px;
+}*/
+
+.jumbotron{
+	/*background-image: linear-gradient(#01665f,#7cf7d6)!important;*/
+	color:#bab8e0;/*#a5a3d4#1f2f6f;#1c0349*/
+	background-color: rgba(1,1,1,0);
+	/*background-image: linear-gradient(to right,#019c61,#adadad);*/
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100px;
+	margin-bottom: -30px;
+	z-index: -1;
+}
+.mapmbd{
+	border: 7px outset #3f156e;
+
+	border-radius: 16px;
+	 width:400;
+	 height:300;
+	 margin-bottom: 7px;
+	 
+	 
+	}
+.imgmbd{
+	border: 7px outset #3f156e;
+	border-radius: 16px;
+	 width:300;
+	 height:200;
+	 margin-right: 20px;
+	
+	}
+#faq{
+	cursor: pointer;
+}
+#showfaq{
+	display: none;
+
+	
+
+}
+.add-mgn{
+	border-style: ridge;
+	border-width: 0px;
+	border-color: #979c98;
+	margin: 25px;
+	padding: 10px;
+
+
+}
+.fa1{
+	font-size: 36px;
+	margin: 10px;
+	padding: 4px;
+	color:#bab8e0;/* #55c2aa mint color*/
+}
+.fa1:hover{
+	font-size: 38px;
+	margin: 10px;
+	padding: 2px;
+	color: #fff;
+	cursor: pointer;
+}
+.arrowdwn{
+	font-size: 20px;
+	margin: 5px;
+	padding: 0px;
+	color: #bab8e0;
+
+}
+.arrowdwn:hover{
+	font-size: 20px;
+	margin: 5px;
+	padding: 0px;
+	color: #ffffff;
+
+
+}
+
+.fa2{
+	font-size: 16px;
+	margin:0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	color:#bab8e0;
+	cursor: pointer;
+
+}
+.fa2:hover{
+	color: #fff;
+	cursor: pointer;
+	
+}
+#header-img{
+background: black;
+max-width: 5%;
+margin-right: 10px;
+margin-left: 0px;
+transform: rotate(360deg);
+/*	transform: translateX(20px);
+	transition-duration: 2s;
+	transform: scale(1.1,1.1);*/
+	transition-duration: 1s;
+	transition-delay: 1s;
+}
+#header-img:hover {
+transform: rotate(360deg);
+transition-duration: 1s;
+transition-delay: 2s;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: 0;
+}
+
+
+
+
+/* -----------MQ-------------*/
+
+@media (max-width:950px) {
+.navbar{
+background-image: linear-gradient(to left, #1a0136, #1c0129);
+
+
+}
+
+
+}/*close mq*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------subscribe form----*/
+ .c-checkbox {
+	 display: none;
+}
+ .c-checkbox:checked + .c-formContainer .c-form {
+	 width: 32em;
+
+}
+ .c-checkbox:checked + .c-formContainer .c-form__toggle {
+	 visibility: hidden;
+	 opacity: 0;
+	 transform: scale(0.7);
+}
+ .c-checkbox:checked + .c-formContainer .c-form__input, .c-checkbox:checked + .c-formContainer .c-form__buttonLabel {
+	 transition: 0.2s 0.1s;
+	 visibility: visible;
+	 opacity: 1;
+	 transform: scale(1);
+}
+ .c-checkbox:not(:checked) + .c-formContainer .c-form__input:required:valid ~ .c-form__toggle::before, .c-checkbox:checked + .c-formContainer .c-form__input:required:valid ~ .c-form__toggle::before {
+	 content: 'subscribed! \1F60A';
+}
+ .c-checkbox:not(:checked) + .c-formContainer .c-form__input:required:valid ~ .c-form__toggle {
+	 pointer-events: none;
+	 cursor: default;
+}
+ .c-formContainer, .c-form, .c-form__toggle {
+	 width: 12em;
+	 height: 2em;
+}
+ .c-formContainer {
+	 position: relative;
+	 font-weight: 400;
+}
+ .c-form, .c-form__toggle {
+	 position: absolute;
+	 border-radius: 6.25em;
+	 background-color: #fff;
+	 transition: 0.2s;
+}
+ .c-form {
+	 left: 13%;
+	 transform: translateX(-01%);
+	 padding: 0.125em;
+	 box-sizing: border-box;
+	/* box-shadow: 0 0.125em 0.1125em rgba(0, 0, 0, 0.3);*/
+	 display: flex;
+	 justify-content: center;
+}
+ .c-form__toggle {
+	 color: #bab8e0;
+	 font-weight: 700;
+	 font-size: 20px;
+	 top: 0;
+	 cursor: pointer;
+	 z-index: 1;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .c-form__toggle::before {
+	 font-size: 20px;
+	 content: attr(data-title);
+}
+ .c-form__input, .c-form__button {
+	 font: inherit;
+	 color:#bab8e0;
+	 border: 0;
+	 outline: 0;
+	 border-radius: 5em;
+	 box-sizing: border-box;
+}
+ .c-form__input, .c-form__buttonLabel {
+	 font-size: 1.15em;
+	 opacity: 0;
+	 visibility: hidden;
+	 transform: scale(0.7);
+	 transition: 0s;
+}
+ .c-form__input {
+	 color: red;
+	 height: 100%;
+	 width: 100%;
+	 padding-left: 12px;
+}
+ .c-form__input::placeholder {
+	 color:#bab8e0;
+}
+ .c-form__input:required:valid {
+	 color: #bab8e0;
+}
+ .c-form__input:required:valid + .c-form__buttonLabel {
+	 color: #5ea671;
+}
+ .c-form__input:required:valid + .c-form__buttonLabel::before {
+	 pointer-events: initial;
+}
+ .c-form__buttonLabel {
+	 color: white;
+	 height: 100%;
+	 width: auto;
+}
+ .c-form__buttonLabel::before {
+	 content: '';
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 pointer-events: none;
+	 cursor: pointer;
+}
+ .c-form__button {
+	 color: inherit;
+	 padding: 0;
+	 height: 100%;
+	 width: 6em;
+	 background-color: black;
+}
+
