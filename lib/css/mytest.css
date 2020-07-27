@@ -6,9 +6,11 @@ a{
 }
 body{
 	 color:#dddded;/*#4c3399;*/
+	 width:95vw;
 
 	 background-color:#fff;/*#55c2aa*/
 	 font-family: "Lucida Console", Monaco, monospace;
+
 }
 .back{
 	z-index: -1;
@@ -18,22 +20,30 @@ body{
 .navbar{
 	background-color: #1c0129;/*#260138;*/
  background-image: linear-gradient(to right, #1a0136, #100145);
-
+z-index: 1;
 }
 
 .qstn{
 	color:#cfbab6 ;
 }
 .hd1{
-	color:#5a86c4 ;
+	color:#c1b6f0 ;
 }
 .para{
+	font-size: 15px;
 	text-align: justify;
 	margin: 10px;
 	padding: 30px;
 }
 
+ul {
+  list-style: circle;
 
+}
+li {
+  margin: 5px;
+  
+}
 .jumbotron{
 	/*background-image: linear-gradient(#01665f,#7cf7d6)!important;*/
 	color:#bab8e0;/*#a5a3d4#1f2f6f;#1c0349*/
@@ -57,10 +67,10 @@ body{
 .imgmbd{
 	border: 7px outset #3f156e;
 	border-radius: 16px;
-	 width:300;
-	 height:200;
+	 width:300px;
+	 height:220px;
 	 margin-right: 20px;
-	
+	margin-top: 30px;
 	}
 #faq{
 	cursor: pointer;
@@ -165,19 +175,82 @@ background-image: linear-gradient(to left, #1a0136, #1c0129);
 
 }/*close mq*/
 
+/*-------------------------------------------------------------------------------*/
+
+.entera{ 
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:#1a0136;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+
+
+}
+.enterb{
+	font-size: 40px;
+	border-color: #dddded;
+	border-width: 2px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:#1a0136;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
+/*--------------------------------------------------------------------------------*/
 /*--------subscribe form----*/
  .c-checkbox {
 	 display: none;
