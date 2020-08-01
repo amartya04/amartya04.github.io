@@ -17,30 +17,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="lib/css/mytest.css">
 <style>
-body{
+
+.parallax {
+  /* The image used */
   background-image: url("imgs/pug.jpg");
- /*background-repeat: no-repeat;*/
-  background-size: cover;
-  position: relative;
-  z-index: -1;
+}
+.summ {
+  /* The image used */
+  background-image: url("imgs/pug.jpg");
 }
 ul {
   list-style: square inside url("imgs/list.png");
 }
+
+
+
 </style>
 </HEAD>
 
 <body>
+<div class="parallax"><!--parallax div--> 
 
 <!--       NAVBAR  -->           
 <header id="header">
-<nav class="navbar navbar-dark custom-bg navbar-expand-md fixed-top">
+<nav class="navbar navbar-dark navbar-expand-md fixed-top">
 
 
-  	
+  
     <img src="imgs/logo.jpg" alt="logo" id="header-img"/>
  		<a class="navbar-brand" href="#">ANIMUS</a>
- 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ 		<button class="navbar-toggler xpndnv" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,9 +60,9 @@ ul {
       <li class="nav-item">
         <a class="nav-link" href="#faq">FAQ</a>
       </li>
-	<li class="nav-item">
+	<!--<li class="nav-item">
         <a class="nav-link" target="_blank" href="http://assassinscreed.ubi.com/">Official</a>
-      </li>		
+      </li>-->		
 </ul>
       
     
@@ -82,9 +88,8 @@ ul {
 <!-- ------------------------------------    -->
 <!--ignore--> 
 <!-- -------------------------------------   -->
-
 <!--Heading--> 
-<div class="container-fluid ">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-12 jumbotron"><h1>WELCOME TO ANIMUS CORP.</h1>
     </div>
@@ -92,16 +97,19 @@ ul {
  </div>
      <!--body--> 
 <div class="container back">
-  <div class="row">
+  <div class="row ">
     <div class="col-lg-8"><h3 class="hd1">Summary</h3>
       <p class="para" style="margin-left: 0px; padding: 0px">
     The Animus (plural: Animi) is a virtual reality machine developed, and eventually commercialised, by Abstergo Industries. It allows the user to read a subject's genetic memory and project the output onto an external screen in three dimensions.
 
     The machine was notably used in Abstergo's Animus Project and the Animi Training Program. The former analyzed the genetic memories of several select subjects, usually to gain information on the Assassin Order or the Pieces of Eden, while the latter was used for the training of Abstergo employees.</p>
 </div>
+
     <div class="col-lg-4"><h3><img alt="animus1" src="imgs/animus1.png" class="imgmbd"></h3></div>
      </div><!-- --><!-- /row -->
-     <div class="row" style="margin-top:10px">
+
+
+<div class="row ani2" style="margin-top:10px">
       <div class="col-lg-4"><h3><img src="imgs/animus2.png" alt="animus2" class="imgmbd" style="margin-top:20px"></h1></div>
     <div class="col-lg-8"><h3 class="hd1">Animus 2.0</h3>
       <p class="para" style="margin-left: 0px; padding: 0px">
@@ -110,9 +118,9 @@ ul {
       The Animus 2.0 was different in many ways to the Animus 1.28, both physically and within the three-dimensional reality it projected.  Despite these improvements, the Animus still suffered from lagged translation software, and was unable to prevent the Bleeding Effect over prolonged use</div>
     </p>
      </div><!-- --><!-- /row -->
-<div class="container back">
-  <div class="row">
-    <div class="col-lg-12"><h3 class="hd1">Trivia</h3>
+<div class="container back ">
+  <div class="row triv">
+    <div class="col-lg-12"> <h3 class="hd1">Trivia </h3>
       <p class="para" style="margin-left: 0px; padding: 0px">
 <ul>
 <li>Animus is a Latin term referring to "the mind" in a variety of senses, ranging from the intellect, the will, or the soul.</li><br>
@@ -138,7 +146,7 @@ The option was also removed after the end of Assassin's Creed III due to Desmond
 
 
 
-<div class="row add-mgn" id="visit">
+<div class="row add-mgn trail" id="visit">
 
     <div class="col-lg-6"><h4 class="hd1">Watch our latest Game trailer!</h4><br> <iframe id="video" class="mapmbd" src="https://www.youtube.com/embed/ssrNcwxALS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" alt="youtube video" allowfullscreen></iframe></div>
     <div class="col-lg-6"><h4 class="hd1">Visit us in our Studio!</h4><br> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.7268419276234!2d72.91115651490189!3d19.119635687062903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c77c16e13009%3A0x67b4d515b29c2f0b!2sUbisoft%20Mumbai%20Studio!5e0!3m2!1sen!2sin!4v1594228413578!5m2!1sen!2sin" class="mapmbd" alt="Map Element" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
@@ -181,7 +189,7 @@ We further look out for our Research Analysts’ well-being through something we
   </div><!--container end-->
 
 
-<div style="margin: 15px"><!--empty div--></div>
+<div style=""><!--empty div--></div>
 <footer id="sticky-footer" class="py-4 darken-12 bg-dark-4 text-white-50 text-center">
   <div class="container flex-container">
     <div class="row">     
@@ -222,5 +230,6 @@ We further look out for our Research Analysts’ well-being through something we
   <!-- Copyright -->
 
 </footer>
+</div><!--iparallax end--> 
 </body>
 </HTML>	
